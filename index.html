@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgePrediction</title>
+</head>
+
+<body
+    style="display: flex; justify-content: center;align-items: center; height: 100vh;margin: 0;background-color: #f5f5f5;">
+    <div
+        style="width: 400px; height: 320px; background-color: #fff;padding: 20px;border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h2 style="text-align: center;">Age Predicter</h2>
+        <form id="feedbackForm">
+            <label for="name">Name:<span style="color: red;">*</span></label>
+            <br>
+            <input type="text" id="name" style="width: 100%;height: 25px;margin-top: 10px; margin-bottom: 10px;">
+            <div id="nameError" style="color: red; font-size: 14px;display: none;">Name is required!</div>
+            <br>
+            <br>
+            <label for="email">Email:<span style="color: red;">*</span></label>
+            <br>
+            <input type="email" id="email" style="width: 100%; height: 25px; margin-top: 10px; margin-bottom: 10px;">
+            <div id="emailError" style="color: red; font-size: 14px;display: none;">Email is required!</div>
+            <input class="submit" type="submit"style="padding: 10px 30px;background-color: #2196F3; border: none;border-radius: 5px;display: block; margin: 15px auto 0;">
+        </form>
+        <p id="result" style="text-align: center;"></p>
+        <p id="error"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
